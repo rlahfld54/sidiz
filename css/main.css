@@ -213,8 +213,6 @@ body {
   justify-content: space-between;
 }
 
-.depth1>a {}
-
 
 .gnb-2-sub {
   position: absolute;
@@ -231,6 +229,7 @@ body {
   font-size: 12px;
   float: left;
   background: #282828;
+  display: none;
 }
 
 .depth2>li {
@@ -253,6 +252,8 @@ body {
 .depth2>li>a:hover {
   color: pink;
 }
+
+#products {}
 
 /*  */
 .slide {
@@ -480,10 +481,18 @@ body {
   background-size: contain;
 }
 
+.ch-1:hover {
+  opacity: 0.5;
+}
+
 .ch-2 {
   height: 560px;
   background: url('../images/ch-2.jpg') no-repeat center;
   background-size: contain;
+}
+
+.ch-2:hover {
+  opacity: 0.5;
 }
 
 .ch-3 {
@@ -492,10 +501,18 @@ body {
   background-size: contain;
 }
 
+.ch-3:hover {
+  opacity: 0.5;
+}
+
 .ch-4 {
   height: 460px;
   background: url('../images/ch-4.jpg') no-repeat center;
   background-size: contain;
+}
+
+.ch-4:hover {
+  opacity: 0.5;
 }
 
 .chair-txt {}
@@ -591,11 +608,19 @@ body {
   background-size: contain;
 }
 
+.ch-5:hover {
+  opacity: 0.5;
+}
+
 .ch-6 {
   width: 340px;
   height: 500px;
   background: url('../images/ch-6.jpg') no-repeat center;
   background-size: contain;
+}
+
+.ch-6:hover {
+  opacity: 0.5;
 }
 
 .ch-7 {
@@ -605,7 +630,9 @@ body {
   background-size: contain;
 }
 
-
+.ch-7:hover {
+  opacity: 0.5;
+}
 
 
 .etc {
