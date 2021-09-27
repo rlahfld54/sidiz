@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -31,6 +31,23 @@
 </head>
 
 <body>
+   <!-- 안내창 -->
+  <div class="modal">
+    <div class="modal-box">
+      <button class="modal-close">❌</button>
+      <p>
+        본 사이트는 포트폴리오용 사이트로 <br>
+        리소스는 원저작자에게 있습니다.
+        <br>
+        저작권은 원래 회사에 있습니다
+        <br>
+        HTML5, CSS3, javaScript & jQuery로 제작되었으며,
+        크롬에 최적화 되어있습니다.
+      </p>
+      <span>닫기버튼을 눌러주세요</span>
+    </div>
+  </div>
+  <!-- 안내창 -->
   <div class="wrap">
     <header class="header">
       <div class="gnb-1">
@@ -51,22 +68,24 @@
         </div>
       </div>
       <div class="gnb-2">
+        <div class="container">
+          <a href="" class="logo"><img style="width:80px;height:24px;" src="images/logo.png" alt="시디즈"></a>
+          <ul class="depth1 clearfix">
+            <li class="about-sidiz">
+              <a href="#">ABOUT SIDIZ</a>
+            </li>
+            <li class="products">
+              <a href="#">PRODUCTS</a>
+            </li>
+            <li class="support">
+              <a href="#">SUPPORT</a>
+            </li>
+          </ul>
+        </div>
 
-        <a href="" class="logo"><img style="width:80px;height:24px;" src="images/logo.png" alt="시디즈"></a>
-
-
-        <ul class="depth1 clearfix">
-          <li class="about-sidiz">
-            <a href="#">ABOUT SIDIZ</a>
-          </li>
-          <li class="products">
-            <a href="#">PRODUCTS</a>
-          </li>
-          <li class="support">
-            <a href="#">SUPPORT</a>
-          </li>
-        </ul>
       </div>
+
+
       <div class="gnb-2-sub">
 
         <ul id="about-sidiz" class="depth2" style="margin-left: 7px;">
@@ -366,7 +385,7 @@
               <div class="frt wp70">
                 <div class="frt-top">
                   <a href="/policy/view.do?policyNo=11">이용약관</a>
-                  <a href="/policy/view.do?policyNo=12">개인정보처리방침</a>
+                  <a href="/policy/view.do?policyNo=12" style="color: red;">개인정보처리방침</a>
                 </div>
                 <div class="frt-bottom">
                   <ul>
@@ -408,26 +427,18 @@
                         <li><a href="/customer/service">시디즈 서비스</a></li>
                       </ul>
                     </li>
-                    <li>친절상담
-                      <p>1899 - 3176</p>
+                    <li style="
+    line-height: 2;
+">친절상담
+                      <p class="lh31">1899 - 3176</p>
                       <p>
                         <strong>평일</strong> | 09:30 - 17:30<br> <span>*점심시간 | 12:30 - 13:30</span><br><br>토요일 |
                         09:30 - 12:30<br>일요일, 공휴일 휴무<br></p>
                     </li>
-
-                    <li>A/S문의
-                      <p class=""
-                        onclick="javascript:window.open('https://bizmessage.kakao.com/chat/open/%40sidiz_official?bot=true&amp;event=WEB_WELCOME')">
-                        챗봇문의</p>
-                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
-            </div>
-
-            <div id="mobile" class="" style="margin:20px auto;background:#807f83;display:none">
-              <p class="pabs w1000 h120 hand" style="color:#ffffff;font-size:40px;font-weight:bold;line-height:120px"
-                onclick="window.location.href='http://m.sidiz.com?mobile'">모바일버전 보기</p>
             </div>
           </div>
         </div>
