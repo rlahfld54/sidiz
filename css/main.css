@@ -2,7 +2,6 @@
 @import url(//db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2);
 
 * {
-
   margin: 0 auto;
 
   padding: 0;
@@ -10,42 +9,27 @@
   box-sizing: border-box;
 
   outline-style: none;
-
-
 }
-
-
 
 html {
-
   font-size: 10px;
-
 }
-
-
 
 a {
   color: #333333;
   text-decoration: none;
 }
 
-
-
 img {
   vertical-align: middle;
   border: 0;
 }
 
-
-
 ul,
 ol,
 li {
-
   list-style: none;
-
 }
-
 
 dt,
 dd,
@@ -55,12 +39,11 @@ td,
 span {
   font-size: 12px;
   font-family: "Malgun Gothic", "Apple SD Gothic Neo", Dotum;
-  color: #807F83;
+  color: #807f83;
 }
 
 body {
-
-  font-family: "Centra No2", 'Roboto', 'Noto Sans KR', sans-serif;
+  font-family: "Centra No2", "Roboto", "Noto Sans KR", sans-serif;
 
   font-weight: 400;
 
@@ -75,11 +58,13 @@ body {
   margin: 0;
 }
 
-
+/* 스크롤바 없애기 */
+::-webkit-scrollbar {
+  display: none;
+}
 
 .clearfix:after {
-
-  content: '';
+  content: "";
 
   position: relative;
 
@@ -88,9 +73,8 @@ body {
   width: 100%;
 
   clear: both;
-
 }
-/* 모달창 */
+/* 안내창 */
 .modal {
   position: fixed;
   left: 0;
@@ -99,41 +83,61 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 999999999999;
+  z-index: 9999999;
 }
 
-.modal-box {
+.modal-cont {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   display: block;
-  width: 800px;
-  height: 350px;
-  padding: 30px;
-  background: beige;
+  width: 550px;
+  height: 300px;
+  background: #fff;
   border-radius: 30px 0 30px 0;
+  padding: 50px;
 }
 
-.modal-box p {
+.modal-cont p {
+  position: relative;
+  display: block;
   font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 50px;
 }
 
-.modal-box span {
-  color: red;
+.modal-cont span {
+  position: relative;
+  display: block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
+  line-height: 1.4;
+  text-align: center;
+  color: #000;
 }
 
-.modal-close {
-  position: absolute;
-  right: 26px;
-  top: 23px;
-  background: powderblue;
-}
+.modal-cont button {
+  position: relative;
+  display: block;
+  float: right;
 
-.modal-hide {
-  display: none;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+  cursor: pointer;
+
+  margin-top: 30px;
+  border: 0;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 30px;
+  border-radius: 4px;
 }
 
 .wrap {
@@ -156,9 +160,9 @@ body {
   display: block;
   height: 100px;
   font-size: 12px;
-  color: #807F83;
+  color: #807f83;
   letter-spacing: 1px;
-  border-bottom: 1px solid #BCBCBC;
+  border-bottom: 1px solid #bcbcbc;
 }
 
 .header .container {
@@ -170,8 +174,8 @@ body {
   position: relative;
   display: block;
   height: 40px;
-  background: #FFF;
-  border-bottom: 1px solid #BCBCBC;
+  background: #fff;
+  border-bottom: 1px solid #bcbcbc;
 }
 
 .search {
@@ -179,10 +183,9 @@ body {
   right: 422px;
   display: inline-block;
   padding: 11px 0;
-  float: left;
   width: 340px;
   height: 40px;
-  border-left: 1px solid #BCBCBC;
+  border-left: 1px solid #bcbcbc;
 }
 
 .search input {
@@ -204,7 +207,7 @@ body {
 }
 
 .search span:hover {
-  color: #002BD2;
+  color: #002bd2;
 }
 
 .login {
@@ -213,7 +216,7 @@ body {
   right: 0;
   width: 422px;
   height: 40px;
-  border-left: 1px solid #BCBCBC;
+  border-left: 1px solid #bcbcbc;
 }
 
 .login ul {
@@ -229,15 +232,15 @@ body {
 }
 
 .login a:hover {
-  color: #002BD2;
+  color: #002bd2;
 }
 
 .gnb-2 {
   display: flex;
   justify-content: space-between;
   height: 60px;
-  background: #FFF;
-  border-bottom: 1px solid #BCBCBC;
+  background: #fff;
+  border-bottom: 1px solid #bcbcbc;
 }
 
 .logo {
@@ -251,25 +254,25 @@ body {
 .depth1 {
   position: relative;
   float: right;
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
 }
 
-.depth1>li {
+.depth1 > li {
   float: left;
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
   line-height: 60px;
 }
 
-.depth1>li>a {
+.depth1 > li > a {
   color: #000;
   padding: 22px;
 }
 
-.depth1>li>a:hover {
-  color: #002BD2;
+.depth1 > li > a:hover {
+  color: #002bd2;
 }
 
 .gnb-2-sub {
@@ -290,13 +293,13 @@ body {
   display: none;
 }
 
-.depth2>li {
+.depth2 > li {
   position: relative;
   display: block;
   padding: 10px 30px;
 }
 
-.depth2>li>a {
+.depth2 > li > a {
   position: relative;
   display: block;
   line-height: 18px;
@@ -307,10 +310,9 @@ body {
   transition: background 0.3s;
 }
 
-.depth2>li>a:hover {
+.depth2 > li > a:hover {
   color: pink;
 }
-
 
 /*  */
 .slide {
@@ -336,7 +338,7 @@ body {
 
 .slide-tit {
   display: inline-block;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-size: 60px;
   line-height: 80px;
   color: #000;
@@ -347,7 +349,7 @@ body {
 
 .slide-prd {
   display: inline-block;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-size: 80px;
   line-height: 104px;
   font-weight: bold;
@@ -359,7 +361,7 @@ body {
 .youtube {
   position: relative;
   height: 100%;
-  color: #807F83;
+  color: #807f83;
 }
 
 .youtube-img img {
@@ -383,7 +385,7 @@ body {
   right: -100px;
   top: -45px;
   display: inline-block;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-size: 14px;
   font-weight: bold;
   color: #999;
@@ -398,52 +400,52 @@ body {
 }
 
 .s1 {
-  background: url('../images/slide1.jpg') no-repeat center;
+  background: url("../images/slide1.jpg") no-repeat center;
   background-size: cover;
 }
 
 .s2 {
-  background: url('../images/slide2.jpg') no-repeat center;
+  background: url("../images/slide2.jpg") no-repeat center;
   background-size: cover;
 }
 
 .s3 {
-  background: url('../images/slide3.jpg') no-repeat center;
+  background: url("../images/slide3.jpg") no-repeat center;
   background-size: cover;
 }
 
 .s4 {
-  background: url('../images/slide4.jpg') no-repeat center;
+  background: url("../images/slide4.jpg") no-repeat center;
   background-size: cover;
 }
 
 .s5 {
-  background: url('../images/slide5.jpg') no-repeat center;
+  background: url("../images/slide5.jpg") no-repeat center;
   background-size: cover;
 }
 
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-  content: '';
+  content: "";
 }
 
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-  content: '';
+  content: "";
 }
 
 .swiper-button-next {
   display: inline-block;
   width: 75px;
   height: 26px;
-  background: url('../images/nextBr.png') no-repeat center;
+  background: url("../images/nextBr.png") no-repeat center;
 }
 
 .swiper-button-prev {
   display: inline-block;
   width: 75px;
   height: 26px;
-  background: url('../images/prevBr.png') no-repeat center;
+  background: url("../images/prevBr.png") no-repeat center;
 }
 
 .swiper-button-next,
@@ -461,11 +463,11 @@ body {
 }
 
 .swiper-button-next:hover {
-  background: url('../images/nextBl.png') no-repeat center;
+  background: url("../images/nextBl.png") no-repeat center;
 }
 
 .swiper-button-prev:hover {
-  background: url('../images/prevBl.png') no-repeat center;
+  background: url("../images/prevBl.png") no-repeat center;
 }
 
 /*  */
@@ -507,7 +509,7 @@ body {
 .title a {
   margin-top: 20px;
   font-size: 13px;
-  color: #002BD2;
+  color: #002bd2;
   float: right;
   letter-spacing: 1px;
 }
@@ -536,7 +538,7 @@ body {
 
 .ch-1 {
   height: 800px;
-  background: url('../images/ch-1.jpg') no-repeat center;
+  background: url("../images/ch-1.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -547,7 +549,7 @@ body {
 
 .ch-2 {
   height: 560px;
-  background: url('../images/ch-2.jpg') no-repeat center;
+  background: url("../images/ch-2.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -558,7 +560,7 @@ body {
 
 .ch-3 {
   height: 680px;
-  background: url('../images/ch-3.jpg') no-repeat center;
+  background: url("../images/ch-3.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -569,7 +571,7 @@ body {
 
 .ch-4 {
   height: 460px;
-  background: url('../images/ch-4.jpg') no-repeat center;
+  background: url("../images/ch-4.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -578,14 +580,11 @@ body {
   cursor: pointer;
 }
 
-.chair-txt {}
-
 .chair-txt h3 {
   display: inline-block;
-  float: left;
   margin: 30px 0px 10px 0px;
   width: 100%;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-weight: bold;
   font-size: 50px;
   line-height: 65px;
@@ -595,10 +594,9 @@ body {
 
 .chair-txt p {
   display: inline-block;
-  float: left;
   margin-bottom: 80px;
   width: 100%;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
@@ -646,10 +644,9 @@ body {
   top: 0;
   margin-top: 20px;
   font-size: 13px;
-  color: #002BD2;
+  color: #002bd2;
   float: right;
 }
-
 
 .kids-list {
   position: absolute;
@@ -667,7 +664,7 @@ body {
 .ch-5 {
   width: 340px;
   height: 500px;
-  background: url('../images/ch-5.jpg') no-repeat center;
+  background: url("../images/ch-5.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -679,7 +676,7 @@ body {
 .ch-6 {
   width: 340px;
   height: 500px;
-  background: url('../images/ch-6.jpg') no-repeat center;
+  background: url("../images/ch-6.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -691,7 +688,7 @@ body {
 .ch-7 {
   width: 340px;
   height: 500px;
-  background: url('../images/ch-7.jpg') no-repeat center;
+  background: url("../images/ch-7.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -700,11 +697,10 @@ body {
   cursor: pointer;
 }
 
-
 .etc {
   position: relative;
   display: block;
-  background: #F5F5F5;
+  background: #f5f5f5;
   height: 1099px;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -732,9 +728,9 @@ body {
   line-height: 60px;
   text-align: center;
   float: left;
-  background: #002BD2;
+  background: #002bd2;
   color: #fff;
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   letter-spacing: 2px;
 }
 
@@ -744,7 +740,7 @@ body {
   line-height: 60px;
   width: 88%;
   text-align: center;
-  background: #DDE6FF;
+  background: #dde6ff;
 }
 
 .sidiz-rules {
@@ -752,7 +748,7 @@ body {
   font-weight: 900;
   line-height: 18px;
   color: #000;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
 }
 
 .sidiz-date {
@@ -760,7 +756,7 @@ body {
   line-height: 18px;
   margin-left: 10px;
   color: #555;
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   cursor: pointer;
 }
 
@@ -784,7 +780,7 @@ body {
 }
 
 .instar-id {
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   font-size: 20px;
   letter-spacing: 1px;
   color: #000;
@@ -813,7 +809,6 @@ body {
   display: block;
 }
 
-
 .tip-box {
   float: left;
   width: 390px;
@@ -821,7 +816,7 @@ body {
 }
 
 .tip-tit {
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   font-size: 18px;
   line-height: 23px;
   color: #000;
@@ -838,12 +833,12 @@ body {
   float: right;
   width: 620px;
   height: 350px;
-  background: url('../images/blogMainImg.jpg') no-repeat center;
+  background: url("../images/blogMainImg.jpg") no-repeat center;
 }
 
 .tip3 {
   width: 351px;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-size: 32px;
   font-weight: 700;
   color: #000;
@@ -853,7 +848,7 @@ body {
 
 .tip-box p {
   width: 390px;
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-size: 15px;
   font-weight: 400;
   color: #555;
@@ -861,9 +856,9 @@ body {
 }
 
 .bloglink {
-  font-family: 'Centra No2';
+  font-family: "Centra No2";
   text-decoration: underline;
-  color: #002BD2;
+  color: #002bd2;
   font-size: 13px;
 }
 
@@ -878,7 +873,7 @@ body {
   font-size: 13px;
   background: white;
   color: #000;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   box-shadow: 0px 4px 5px rgb(0 0 0 / 15%);
   border-radius: 100px;
   z-index: 999999;
@@ -889,7 +884,7 @@ body {
 }
 
 .findstore a:hover {
-  color: #002BD2;
+  color: #002bd2;
 }
 
 .kakaoChatPC {
@@ -902,7 +897,7 @@ body {
   font-size: 13px;
   background: white;
   color: #000;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   box-shadow: 0px 4px 5px rgb(0 0 0 / 15%);
   border-radius: 100px;
   z-index: 999999;
@@ -913,7 +908,7 @@ body {
 }
 
 .kakaoChatPC a:hover {
-  color: #002BD2;
+  color: #002bd2;
 }
 
 /*  */
@@ -942,13 +937,11 @@ body {
 }
 
 .snsLogo {
-  float: left;
   display: inline-block;
   width: 30px;
   height: 30px;
   margin-left: 20px;
 }
-
 
 #footer-section2 {
   position: relative;
@@ -972,7 +965,6 @@ body {
   height: 45px;
   margin-top: 10px;
 }
-
 
 .frt {
   position: absolute;
@@ -998,11 +990,11 @@ body {
 }
 
 .frt-top a {
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-weight: 400;
   font-size: 13px;
   line-height: 55px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 74px;
 }
 
@@ -1020,17 +1012,17 @@ body {
 .frt-bottom li {
   font-weight: 700;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   margin: 0;
 }
 
 .frt-bottom a {
-  font-family: 'Centra No2', 'Noto Sans KR';
+  font-family: "Centra No2", "Noto Sans KR";
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .flex-col {
